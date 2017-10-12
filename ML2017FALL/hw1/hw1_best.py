@@ -3,7 +3,7 @@ import numpy as np
 from sys import argv
 
 get_time = 9
-feature = [ 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 1 ]
+feature = [ 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ]
 
 w = np.load('model.npy')
 
@@ -28,7 +28,7 @@ for i in row:
 test_x = np.array(test_x)
                    
 # add square term
-#test_x = np.concatenate((test_x,test_x**2), axis=1)
+test_x = np.concatenate((test_x,test_x**2), axis=1)
 
 # add bias
 test_x = np.concatenate((np.ones((test_x.shape[0],1)),test_x), axis=1)
