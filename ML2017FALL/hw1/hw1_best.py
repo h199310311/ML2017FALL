@@ -5,7 +5,7 @@ from sys import argv
 get_time = 9
 feature = [ 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ]
 
-w = np.load('model.npy')
+w = np.load('model_best.npy')
 
 test_x = []
 n_row = 0
