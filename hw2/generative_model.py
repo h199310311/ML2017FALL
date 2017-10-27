@@ -3,7 +3,7 @@ import numpy as np
 from sys import argv
 
 # training data
-reader = csv.reader(open(argv[1], mode='r',))
+reader = csv.reader(open(argv[3], mode='r',))
 next(reader)
 tra_in_des = []
 tra_in_con = []
@@ -22,7 +22,7 @@ for row in reader:
 tra_in_des = np.array(tra_in_des)
 tra_in_con = np.array(tra_in_con)
 
-reader = csv.reader(open(argv[2], mode='r',))
+reader = csv.reader(open(argv[4], mode='r',))
 next(reader)
 tra_ou = []
 for row in reader:

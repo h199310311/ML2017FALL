@@ -7,7 +7,7 @@ def sigmoid(z):
     return np.clip(sig,0.00000000000001,0.99999999999999)
 
 # training data
-reader = csv.reader(open(argv[1], mode='r',))
+reader = csv.reader(open(argv[3], mode='r',))
 next(reader)
 tra_in = []
 for row in reader:
@@ -20,7 +20,7 @@ for row in reader:
     tra_in.append(new)
 tra_in = np.array(tra_in)
 
-reader = csv.reader(open(argv[2], mode='r',))
+reader = csv.reader(open(argv[4], mode='r',))
 next(reader)
 tra_ou = []
 for row in reader:
