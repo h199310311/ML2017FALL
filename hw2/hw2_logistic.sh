@@ -1,3 +1,3 @@
 #!/bin/bash 
-python Logistic Regression.py $1 $2
-python Logistic Regression output.py $3 $4
+python logistic_regression.py $1 $2
+python logistic_regression_output.py $3 $4
