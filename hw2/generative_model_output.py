@@ -52,7 +52,7 @@ for i in range(len(res)):
     fin_ans[i].append(res[i])
 
 text = open(argv[2], "w+")
-s = csv.writer(text,delimiter=',',lineterminator='\n')
+s = csv.writer(open(argv[2], "w+"),delimiter=',',lineterminator='\n')
 s.writerow(["id","label"])
 for i in range(len(fin_ans)):
     s.writerow(fin_ans[i])

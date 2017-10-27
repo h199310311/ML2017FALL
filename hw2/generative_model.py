@@ -82,7 +82,6 @@ for i in range(len(tra_in_des[0])):
     des_ou[2].append(float(count_c2x1)/(count_c1x1+count_c2x1))
     des_ou[3].append(float(count_c2x0)/(count_c1x0+count_c2x0))
 des_ou=np.array(des_ou)
-print(des_ou)
 
 # save Model
 np.save('Generative descrete model.npy',des_ou)
